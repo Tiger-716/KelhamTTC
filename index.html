@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/b138ab1a4d.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="">Timetable</a>
+        <a href="">About Us</a>
+        <a href="">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <p>Pride Award Winning Club</p>
+      <p>Junior Session</p>
+      <p>Training venue for the university of sheffield table tennis team</p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/YWsxs9fKTBk?si=KsKmP3WjBLWYGDWM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <div><a href="https://www.tabletennisengland.co.uk/sheffield-table-tennis-club-on-a-mission-to-create-opportunities-for-everyone/">TT England</a></div>
+      <table>
+        <tr>
+          <th></th>
+          <th class="day">MON</th>
+          <th class="day">TUE</th>
+          <th class="day">WED</th>
+          <th class="day">THU</th>
+          <th class="day">FRI</th>
+          <th class="day">SAT</th>
+          <th class="day">SUN</th>
+        </tr>
+        <tr>
+          <td class="time">10AM-12PM</td>
+          <td class="free mon">FREE PLAY<br>OPEN TO ALL</td>
+          <td class="free tue">FREE PLAY<br>OPEN TO ALL</td>
+          <td class="free wed">FREE PLAY<br>OPEN TO ALL</td>
+          <td class="free thr">FREE PLAY<br>OPEN TO ALL</td>
+          <td class="free fri">FREE PLAY<br>OPEN TO ALL</td>
+          <td class="free sat">FREE PLAY<br>OPEN TO ALL</td>
+          <td class="free sun">FREE PLAY<br>OPEN TO ALL</td>
+        </tr>
+        <tr>
+          <td class="time">12PM-2PM</td>
+          <td class="free mon">FREE PLAY<br>OPEN TO ALL</td>
+          <td class="free tue">FREE PLAY<br>OPEN TO ALL</td>
+          <td class="free wed">FREE PLAY<br>OPEN TO ALL</td>
+          <td class="free thr">FREE PLAY<br>OPEN TO ALL</td>
+          <td class="free fri">FREE PLAY<br>OPEN TO ALL</td>
+          <td class="team sat">UNIVERSITY of SHEFFIELD<br>TTC</td>
+          <td class="free sun">FREE PLAY<br>OPEN TO ALL</td>
+        </tr>
+        <tr>
+          <td class="time">2PM-4PM</td>
+          <td class="free mon">FREE PLAY<br>OPEN TO ALL</td>
+          <td class="free tue">FREE PLAY<br>OPEN TO ALL</td>
+          <td class="free wed">FREE PLAY<br>OPEN TO ALL</td>
+          <td class="free thr">FREE PLAY<br>OPEN TO ALL</td>
+          <td class="free fri">FREE PLAY<br>OPEN TO ALL</td>
+          <td class="team sat">UKRAINIANS in SHEFFIELD</td>
+          <td class="session sun">COMMUNITY<br>SESSION</td>
+        </tr>
+        <tr>
+          <td class="time">4PM-6PM</td>
+          <td class="close mon">CLOSED</td>
+          <td class="session tue" onclick="openForm('tue', '10-12')">JUNIOR<br>SESSION</td>
+          <td class="free wed">FREE PLAY<br>OPEN TO ALL</td>
+          <td class="free thr">FREE PLAY<br>OPEN TO ALL</td>
+          <td class="free fri">FREE PLAY<br>OPEN TO ALL</td>
+          <td class="free sat">FREE PLAY<br>OPEN TO ALL</td>
+          <td class="free sun">FREE PLAY<br>OPEN TO ALL</td>
+        </tr>
+        <tr>
+          <td class="time">6PM-9PM</td>
+          <td class="close mon">CLOSED</td>
+          <td class="close tue">CLOSED</td>
+          <td class="team wed">CLUB NIGHT<br>REGISTERED<br>PLAYERS ONLY</td>
+          <td class="team thr">KELHAM A<br>LEAGUE TEAM<br>ONLY</td>
+          <td class="team fri">CLUB NIGHT<br>REGISTERED<br>PLAYERS ONLY</td>
+          <td class="free sat">FREE PLAY<br>OPEN TO ALL</td>
+          <td class="free sun">FREE PLAY<br>OPEN TO ALL</td>
+        </tr>
+      </table>
+      <span id="booking-form">
+        <i id="close" class="fa-solid fa-xmark"></i><br>
+        <div id="session-txt"></div>
+        <div id="slot"></div>
+        <div id="booked"></div>
+        <input id="booking-input"><br>
+        <button id="booking-btn">book</button>
+      </span>
+      <table id="info">
+        <tr>
+          <td class="free">FREE PLAY<br>OPEN TO ALL</td>
+          <td style="color: black">No Membership<br>Required.<br>Just turn up and<br>play - See café or<br>pub for equipment.</td>
+          <td class="session">JUNIOR<br>SESSION</td>
+          <td style="color: black">Our Junior<br>Session.<br>Contact Simon<br>07774122845<br>for more info.</td>
+          <td>SOCIAL PLAY<br>BEGINNERS<br>WELCOME</td>
+          <td style="color: black">All welcome, all<br>abilities. If you're<br>looking to get<br>involved in the<br>club, come along.</td>
+          <td class="team">CLUB NIGHT<br>REGISTERED<br>PLAYERS ONLY</td>
+          <td style="color: black">Sessions are for<br>club league<br>players only.<br>Please register via<br>Spond.</td>
+        </tr>
+      </table>
+    </main>
+    <footer>
+      <div>© 2025 Kelham Island Table Tennis Club. All Rights Reserved.</div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

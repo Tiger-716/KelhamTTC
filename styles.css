@@ -1,0 +1,62 @@
+* {
+  text-align: center;
+}
+
+a {
+  color: red;
+  text-decoration: none;
+}
+
+table {
+  color: white;
+}
+
+td {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+td:hover {
+  background-color: black;
+}
+
+.day, .time {
+  background-color: navy;
+}
+
+.free {
+  background-color: yellow;
+  color: black;
+}
+
+.session {
+  background-color: aqua;
+}
+
+.team {
+  background-color: purple;
+}
+
+.close {
+  background-color: gray;
+}
+
+#info {
+  margin-top: 10px;
+}
+
+#booking-form {
+  display: none;
+  border: 3px dotted red;
+}
+
+#close {
+  cursor: pointer;
+  font-size: 30px;
+  float: right;
+  margin: 15px 30px;
+}
+
+#close:hover {
+  color: red;
+}
