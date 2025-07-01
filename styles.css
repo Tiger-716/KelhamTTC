@@ -1,9 +1,50 @@
+:root{
+    --blue: #175091;
+    --white: #fafafa;
+    --free: #eda41c;
+    --social: #85ba34;
+    --volunteer: #4ac9cd;
+    --registered: #9d4dcb;
+    --closed: #242424;
+    --link: #e52020;
+    --visited: #ffdbdb;
+}
+
 html, body{
     height: 100%;
     text-align: center;
     font-size: 1.2em;
     font-family: "Montserrat", sans-serif;
 }
+
+h1{
+    margin: 1.5% 0;
+    color: var(--blue);
+}
+
+header *{
+    margin: 0;
+}
+
+h4{
+    color: var(--white);
+    background-color: var(--blue);
+    font-weight: lighter;
+    padding: 0.5% 0;
+}
+
+a{
+    background-color: var(--link);
+    color: var(--white);
+    padding: 2.5%;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+a:visited{
+    color: var(--visited);
+}
+
 
 .flex-container, #description, .footer-container{
     display: flex;
@@ -13,6 +54,10 @@ html, body{
 
 .flex-item{
       margin: 0 2.5%;
+}
+
+.flex-item *{
+    margin: 5% 0;
 }
 
 .flex-video{
@@ -38,7 +83,13 @@ html, body{
 
 .session-text{
     margin: 2.5%;
+    border-top: 10px solid var(--blue);
 }
+
+h3{
+    color: var(--blue);
+}
+
 
 #timetable{
     position: relative;
@@ -48,20 +99,48 @@ html, body{
 
 table, th, td{
     border: 2px solid grey;
+    margin: 0.5% 0;
 }
 
 th{
     height: 75px;
+    background-color: var(--blue);
+    color: var(--white);
+    min-width: 125px;
 }
 
 th:first-child, td:first-child{
-    background-color: white;
+    background-color: var(--blue);
+    color: var(--white);
     width: 100px;
     font-weight: bold;
     position: sticky;
     min-width: 100px;
     max-width: 100px;
     left: 0px;
+}
+
+.free-to-play{
+    background-color: var(--free);
+}
+
+.social{
+    background-color: var(--social);
+}
+
+.volunteering{
+    background-color: var(--volunteer);
+    color: var(--white);
+}
+
+.reserved{
+    background-color: var(--registered);
+    color: var(--white);
+}
+
+.closed{
+    background-color: var(--closed);
+    color: var(--white);
 }
 
 
@@ -83,7 +162,7 @@ footer{
 }
 
 .description-box:not(:last-child){
-    border-right: 1px solid grey;
+    border-right: 1px solid var(--blue);
 }
 
 .description-box *{
