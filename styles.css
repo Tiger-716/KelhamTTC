@@ -33,11 +33,13 @@ h4{
     padding: 0.5% 0;
 }
 
-#nav-bar{
+nav{
+    position: sticky;
+    top: 0;
     background-color: var(--blue);
-    border-top: 10px solid lightgray;
+    border-top: 5px solid lightgray;
     padding: 1.5% 0;
-
+    z-index: 1;
 }
 
 #nav-bar a{
@@ -47,7 +49,7 @@ h4{
 }
 
 #nav-bar a:visited{
-    color: lightgray;
+    color: #dfdfdf;
 }
 
 #TT-England{
@@ -70,7 +72,7 @@ h4{
 }
 
 .flex-item{
-      margin: 0 2.5%;
+    margin: 0 2.5%;
 }
 
 .flex-item *{
