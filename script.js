@@ -57,7 +57,7 @@ function updateBooked() {
 
 
 // get data from google sheet
-const sheetId = "1Yhe8juGUVuoCZiRECcwdjnK36O5DlUfMES8oauzdB0w";
+const sheetId = "1CZSYJLbKOa4r4Et2K-CCTdZA4Bi6sXen4_1m3P_mqo8";
 const sheetName = encodeURIComponent("TimeTable");
 const sheetURL = `https://docs.google.com/spreadsheets/d/${sheetId}/gviz/tq?tqx=out:csv&sheet=${sheetName}`;
 
