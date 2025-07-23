@@ -15,6 +15,7 @@ html, body{
     text-align: center;
     font-size: 1.2em;
     font-family: "Montserrat", sans-serif;
+    margin: 0;
 }
 
 h1{
@@ -46,6 +47,7 @@ nav{
     font-weight: bolder;
     text-decoration: none;
     color: var(--white);
+    text-decoration: underline;
 }
 
 #nav-bar a:visited{
@@ -190,4 +192,26 @@ footer{
 
 .description-box *{
     margin: 2.5%;
+}
+
+#season-list{
+    padding: 2%;
+    margin: 1%;
+    text-align: left;
+    list-style-type: "\21A6";
+}
+
+.season-bulletpoint h5{
+    margin: 1%;
+}
+
+.fixture-list{
+    display: none;
+}
+
+.fixture-list ul{
+    font-size: 0.8em;
+    margin: 1%;
+    list-style-type: disc;
+    font-style: italic;
 }

@@ -17,9 +17,29 @@
       </div>
     </nav>
     <main>
-      <ul>
-        <li>Match H Crookes</li>
-        <li>Match A Scorpions</li>
+      <ul id="season-list">
+        <li>
+          <div onclick="showFixtureList()" class="season-bulletpoint">
+            <h5>Summer League 2025</h5>
+          </div>
+          <div id="test" class="fixture-list">
+            <ul>
+              <li>AWAY Crookes D</li>
+              <li>HOME Scorpions E</li>
+              <li>HOME Scorpions D</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="season-bulletpoint">
+            <h5>Winter League 2025</h5>
+          </div>
+        </li>
+        <li>
+          <div class="season-bulletpoint">
+            <h5>Summer League 2026</h5>
+          </div>
+        </li>
       </ul>
     </main>
     <footer>
@@ -38,4 +58,5 @@
       <p>&copy; All rights reserved.</p>
     </footer>
   </body>
+  <script src="toggle_list.js"></script>
 </html>
