@@ -1,62 +1,217 @@
-* {
-  text-align: center;
+:root{
+    --blue: #175091;
+    --white: #fafafa;
+    --free: #eda41c;
+    --social: #85ba34;
+    --volunteer: #4ac9cd;
+    --registered: #9d4dcb;
+    --closed: #242424;
+    --link: #e52020;
+    --visited: #ffdbdb;
 }
 
-a {
-  color: red;
-  text-decoration: none;
+html, body{
+    height: 100%;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
 }
 
-table {
-  color: white;
+h1{
+    margin: 1.5% 0;
+    color: var(--blue);
 }
 
-td {
-  border: 1px solid black;
-  padding: 5px;
+header *{
+    margin: 0;
 }
 
-td:hover {
-  background-color: black;
+h4{
+    color: var(--white);
+    background-color: var(--blue);
+    font-weight: lighter;
+    padding: 0.5% 0;
 }
 
-.day, .time {
-  background-color: navy;
+nav{
+    position: sticky;
+    top: 0;
+    background-color: var(--blue);
+    border-top: 5px solid lightgray;
+    padding: 1.5% 0;
+    z-index: 1;
 }
 
-.free {
-  background-color: yellow;
-  color: black;
+#nav-bar a{
+    font-weight: bolder;
+    text-decoration: none;
+    color: var(--white);
+    text-decoration: underline;
 }
 
-.session {
-  background-color: aqua;
+#nav-bar a:visited{
+    color: #dfdfdf;
 }
 
-.team {
-  background-color: purple;
+#TT-England{
+    background-color: var(--link);
+    color: var(--white);
+    padding: 2.5%;
+    border-radius: 10px;
+    text-decoration: none;
 }
 
-.close {
-  background-color: gray;
+#TT-England:visited{
+    color: var(--visited);
 }
 
-#info {
-  margin-top: 10px;
+
+.flex-container, #description, .footer-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-#booking-form {
-  display: none;
-  border: 3px dotted red;
+.flex-item{
+    margin: 0 2.5%;
 }
 
-#close {
-  cursor: pointer;
-  font-size: 30px;
-  float: right;
-  margin: 15px 30px;
+.flex-item *{
+    margin: 5% 0;
 }
 
-#close:hover {
-  color: red;
+.flex-video{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 25%;
+}
+
+#video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#sessions{
+    margin: 2.5% 0;
+}
+
+.session-text{
+    margin: 2.5%;
+    border-top: 10px solid var(--blue);
+}
+
+h3{
+    color: var(--blue);
+}
+
+
+#timetable{
+    position: relative;
+    overflow-x: auto;
+    margin-bottom: 2.5%;
+}
+
+table, th, td{
+    border: 2px solid grey;
+    margin: 0.5% 0;
+}
+
+th{
+    height: 75px;
+    background-color: var(--blue);
+    color: var(--white);
+    min-width: 125px;
+}
+
+th:first-child, td:first-child{
+    background-color: var(--blue);
+    color: var(--white);
+    width: 100px;
+    font-weight: bold;
+    position: sticky;
+    min-width: 100px;
+    max-width: 100px;
+    left: 0px;
+}
+
+.free-to-play{
+    background-color: var(--free);
+}
+
+.social{
+    background-color: var(--social);
+}
+
+.volunteering{
+    background-color: var(--volunteer);
+    color: var(--white);
+}
+
+.reserved{
+    background-color: var(--registered);
+    color: var(--white);
+}
+
+.closed{
+    background-color: var(--closed);
+    color: var(--white);
+}
+
+
+footer{
+    border: 2px solid black;
+    color: lightgray;
+    background-color: black;
+    font-size: 1rem;
+    padding: 1% 0;
+    margin: 1% 0;
+}
+
+.footer-item{
+    padding: 0 2.5%;
+}
+
+.footer-item:not(:last-child){
+    border-right: 1px dotted lightgray;
+}
+
+.description-box{
+    min-width: 200px;
+}
+
+.description-box:not(:last-child){
+    border-right: 1px solid var(--blue);
+}
+
+.description-box *{
+    margin: 2.5%;
+}
+
+#season-list{
+    padding: 2%;
+    margin: 1%;
+    text-align: left;
+    list-style-type: "\21A6";
+}
+
+.season-bulletpoint h5{
+    margin: 1%;
+}
+
+.fixture-list{
+    display: none;
+}
+
+.fixture-list ul{
+    font-size: 0.8em;
+    margin: 1%;
+    list-style-type: disc;
+    font-style: italic;
 }
